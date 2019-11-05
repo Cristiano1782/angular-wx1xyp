@@ -3,7 +3,7 @@
     <p class="lead">{{contatto.getNomeCompleto()}}
       <img *ngIf="contatto.nrStelle == 5; else btnPreferito" class="stella" src="https://cdn.icon-icons.com/icons2/1077/PNG/512/star_77949.png">
       <ng-template #btnPreferito>
-    <button class="btn btn-primary">Preferito</button>
+    <button class="btn btn-primary btn-ng" (click)="setPreferito()">Preferito</button>
       </ng-template>
     </p>
     <div class="row">

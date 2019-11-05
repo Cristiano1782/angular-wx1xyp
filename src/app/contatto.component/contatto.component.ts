@@ -10,7 +10,4 @@ import { Contatto } from './contatto.model';
 export class ContattoComponent{
   contatto: Contatto = new Contatto('Cristiano', 'Panizza', 'panizzacristiano@gmail.com', '123456789', 5);
 
-  setPreferito(){
-    this.contatto.nrStelle = 5;
-  }
 }

@@ -1,6 +1,7 @@
 <div class='container'>
   <div class="container">
-    <p class="lead">{{contatto.getNomeCompleto()}}<img class="stella" src="https://cdn.icon-icons.com/icons2/1077/PNG/512/star_77949.png">
+    <p class="lead">{{contatto.getNomeCompleto()}}
+      <img *ngIf="contatto.nrStelle == 5" class="stella" src="https://cdn.icon-icons.com/icons2/1077/PNG/512/star_77949.png">
     </p>
     <div class="row">
       <div class="col-sm-3">
